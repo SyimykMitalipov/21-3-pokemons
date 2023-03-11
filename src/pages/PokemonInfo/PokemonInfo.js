@@ -4,7 +4,6 @@ import { getPokemon } from '../../api/fetchPokemons';
 const PokemonInfo = () => {
   const [ pokemon, setPokemon ] = useState();
   const { id } = useParams();
-  
 
   useEffect(() => {
     getPokemon(id).then((data => setPokemon(data)));
